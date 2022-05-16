@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>用户登录</title>
+  <link rel="stylesheet" href="css/login.css" type="text/css" />
+</head>
+
+<body>
+  <form>
+		<div class="bt">
+			<h3>用户登录</h3>
+		</div>
+    <div class="user">
+      <input type="text" name="name" required placeholder="用户名"  pattern="^[a-zA-Z_]\w{0,9}$"/>
+      <input type="password" name="password" required placeholder="密码"  pattern="^.{6,16}$"/>
+    </div>
+    <div class="footer">
+      <div></div>
+      <input type="submit" name="submit" value="登录" class="btn" />&nbsp;&nbsp;
+      <input type="submit" name="submit" value="注册" class="btn" formaction="register.html" />
+    </div>
+  </form>
+</body>
+
+</html>

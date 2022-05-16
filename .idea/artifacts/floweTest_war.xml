@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="floweTest:war">
+    <output-path>$PROJECT_DIR$/floweTest/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>false</exploded>
+        <module>floweTest</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="archive" name="floweTest-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="floweTest:war exploded" />
+    </root>
+  </artifact>
+</component>

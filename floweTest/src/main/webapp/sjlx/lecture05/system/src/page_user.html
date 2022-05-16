@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap核心CSS文件 -->
+    <link href="../res/css/bootstrap.min.css" rel="stylesheet">
+		    <script src="./echarts.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+       <div id="main" style="width: 600px;height:400px;"></div>
+       <script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+
+option = {
+  tooltip: {
+    formatter: '{a} <br/>{b} : {c}%'
+  },
+  series: [
+    {
+      name: 'Pressure',
+      type: 'gauge',
+      progress: {
+        show: true
+      },
+      detail: {
+        valueAnimation: true,
+        formatter: '{value}'
+      },
+      data: [
+        {
+          value: 50,
+          name: 'SCORE'
+        }
+      ]
+    }
+  ]
+};
+
+option && myChart.setOption(option);
+       </script>
+</body>
+
+</html>
